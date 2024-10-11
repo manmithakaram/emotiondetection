@@ -11,7 +11,7 @@
 <body>
     <div class="navb">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html#home">EmoVision</a>
+            <a class="navbar-brand" href="/">EmoVision</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -22,7 +22,7 @@
                 </li>
                 <li class="nav-item active" id="about">
                     <!-- try.html -->
-                    <a class="nav-link" href="/">About <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{{ url_for('home') }}#about-section">About <span class="sr-only">(current)</span></a>
                 <li class="nav-item active" id="usecase">
                     <a class="nav-link" href="/usecase">UseCase <span class="sr-only">(current)</span></a>
                 </li>
@@ -30,7 +30,7 @@
                     <a class="nav-link" href="/try">Try <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active" id="contact">
-                  <a class="nav-link" href="/">Contact <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="{{ url_for('home') }}#contact-section">Contact <span class="sr-only">(current)</span></a>
               </li>
               </ul>
             </div>
